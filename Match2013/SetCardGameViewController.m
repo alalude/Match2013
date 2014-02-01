@@ -7,7 +7,7 @@
 //
 
 #import "SetCardGameViewController.h"
-#import "HistoryViewController.h"
+// #import "HistoryViewController.h"
 #import "SetCardDeck.h"
 #import "SetCard.h"
 
@@ -33,7 +33,8 @@
     return [[SetCardDeck alloc] init];
 }
 
-- (void)updateUI
+/*
+- (void)updateUI // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - CHOP
 {
     // run super classes's update
     [super updateUI];
@@ -42,7 +43,7 @@
 
 }
 
-- (NSAttributedString *)replaceCardDescriptionsInText:(NSAttributedString *)text
+- (NSAttributedString *)replaceCardDescriptionsInText:(NSAttributedString *)text // - - - - - - - CHOP
 {
     NSMutableAttributedString *newText = [text mutableCopy];
     
@@ -66,7 +67,7 @@
     
     return newText;
 }
-
+*/
 
 
 - (NSAttributedString *)titleForCard:(Card *)card
@@ -119,7 +120,9 @@
     return [UIImage imageNamed:card.chosen ? @"setCardSelected" : @"setCard"];
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+// Killed for Assignment 4
+/*
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender // - - - - - - - CHOP
 {
     if ([segue.identifier isEqualToString:@"Show History"])
     {
@@ -137,22 +140,7 @@
         }
     }
 }
-
-/*
- - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
  */
+
 
 @end

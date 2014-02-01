@@ -11,8 +11,8 @@
 
 @interface CardGameViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *flipDescription;
-@property (strong, nonatomic) NSMutableArray *flipHistory;  // of NSStrings
+// @property (weak, nonatomic) IBOutlet UILabel *flipDescription; // - - - - - - - - - - CHOP
+// @property (strong, nonatomic) NSMutableArray *flipHistory;  // of NSStrings // - - - - - - - - - - CHOP
 @property (strong, nonatomic) NSString *gameType;
 
 // protected
